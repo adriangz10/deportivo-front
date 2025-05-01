@@ -35,8 +35,8 @@ function Header() {
                 Recuperar Equipo
               </Link>
                {/* Nuevo Enlace */}
-               <Link to="/admin/equipos" className={getLinkClass('/admin/equipos')}>
-                Ver Equipos
+               <Link to="/admin" className={getLinkClass('/admin')}>
+                
               </Link>
             </div>
           </div>

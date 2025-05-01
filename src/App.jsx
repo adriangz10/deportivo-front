@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<TeamRegistrationForm />} />
             <Route path="/recuperar" element={<TeamRecoveryPage />} />
-            <Route path="/admin/equipos" element={<TeamListPage />} /> {/* <-- Nueva Ruta */}
+            <Route path="/admin" element={<TeamListPage />} />
             {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
         </main>
