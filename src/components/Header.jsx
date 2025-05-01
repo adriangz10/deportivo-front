@@ -12,6 +12,7 @@ function Header() {
 
   const getLinkClass = (path) => {
     return location.pathname === path
+    
       ? 'bg-indigo-700 text-white block px-3 py-2 rounded-md text-sm font-medium'
       : 'text-indigo-100 hover:bg-indigo-500 hover:bg-opacity-75 block px-3 py-2 rounded-md text-sm font-medium';
   };
