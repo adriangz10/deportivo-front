@@ -11,7 +11,7 @@ function Header() {
   };
 
   const getLinkClass = (path) => {
-    return location.pathname === path
+    return location.pathname === path || (path === '/admin' && location.pathname.startsWith('/admin')) // Marcar 'Administración' como activo si estamos en subrutas
     
       ? 'bg-indigo-700 text-white block px-3 py-2 rounded-md text-sm font-medium'
       : 'text-indigo-100 hover:bg-indigo-500 hover:bg-opacity-75 block px-3 py-2 rounded-md text-sm font-medium';
@@ -33,6 +33,10 @@ function Header() {
               </Link>
               <Link to="/recuperar" className={getLinkClass('/recuperar')}>
                 Recuperar Equipo
+              </Link>
+               {/* Nuevo Enlace */}
+               <Link to="/admin/equipos" className={getLinkClass('/admin/equipos')}>
+                Ver Equipos
               </Link>
             </div>
           </div>
