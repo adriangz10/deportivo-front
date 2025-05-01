@@ -37,7 +37,7 @@ function Header() {
                {/* Nuevo Enlace */}
                <Link to="/admin" className={getLinkClass('/admin')}>
                 
-              </Link>
+              </Link> 
             </div>
           </div>
 
