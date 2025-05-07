@@ -306,7 +306,7 @@ function TeamRecoveryPage() {
                     value={recoveryCode}
                     onChange={(e) => setRecoveryCode(e.target.value)}
                     className="flex-grow px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"
-                    placeholder="Ej: a1b2c3d4e5f6"
+                    placeholder="Ej: 2356"
                     disabled={isLoading || isSaving}
                 />
                  <button
